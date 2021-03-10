@@ -61,6 +61,9 @@
     execute pathogen#infect()
     filetype plugin indent on
 
+  "ale:
+    let g:ale_enabled = 1
+
   "gruvbox:
     set background=dark
     colorscheme gruvbox
