@@ -41,6 +41,10 @@
   set number relativenumber
   "noremap <leader>n :set nu! rnu!<CR>
 
+  "Highlight trailing whitespace
+  highlight ExtraWhitespace ctermbg=red guibg=red
+  match ExtraWhitespace /\s\+$/
+
 "filetypes:
 
   "python:
@@ -64,10 +68,6 @@
   "ale:
     let g:ale_enabled = 1
 
-  "gruvbox:
-    set background=dark
-    colorscheme gruvbox
-
   "indentLine
     let g:indentLine_enabled = 0
 
@@ -75,9 +75,6 @@
     nnoremap <leader>n :NERDTreeFocus<CR>
     nnoremap <C-n> :NERDTree<CR>
     nnoremap <C-t> :NERDTreeToggle<CR>
-
-  "vim-airline:
-    let g:airline_powerline_fonts = 1
 
   "vim-markdown:
     filetype plugin on
