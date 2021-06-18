@@ -59,6 +59,8 @@
     endfunction
     au BufNewFile,BufRead *.py call PythonOptions()
 
+"base16:
+
 "packages:
 
   "pathogen:
@@ -68,20 +70,30 @@
   "ale:
     let g:ale_enabled = 1
 
-  "indentLine
+  "base16-vim:
+    if filereadable(expand("~/.vimrc_background"))
+      let base16colorspace=256
+      source ~/.vimrc_background
+    endif
+    let base16colorspace=256  " Access colors present in 256 colorspace
+
+  "indentLine:
     let g:indentLine_enabled = 0
 
-  "nerdtree
+  "nerdtree:
     nnoremap <leader>n :NERDTreeFocus<CR>
     nnoremap <C-n> :NERDTree<CR>
     nnoremap <C-t> :NERDTreeToggle<CR>
+
+  "vim-airline:
+    let g:airline_powerline_fonts = 1
 
   "vim-markdown:
     filetype plugin on
     let g:markdown_enable_spell_checking = 1
     map gf :e <cfile><CR>
 
-  "vim-mergetool
+  "vim-mergetool:
     let g:mergetool_layout = 'mr'
     let g:mergetool_prefer_revision = 'local'
 
