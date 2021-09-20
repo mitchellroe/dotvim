@@ -10,9 +10,6 @@
 [submodule "bundle/vim-mergetool"]
 	path = bundle/vim-mergetool
 	url = https://github.com/samoshkin/vim-mergetool.git
-[submodule "bundle/vim-ripgrep"]
-	path = bundle/vim-ripgrep
-	url = https://github.com/jremmen/vim-ripgrep.git
 [submodule "bundle/vim-sensible"]
 	path = bundle/vim-sensible
 	url = https://github.com/tpope/vim-sensible.git
@@ -76,3 +73,6 @@
 [submodule "bundle/vim-vagrant"]
 	path = bundle/vim-vagrant
 	url = https://github.com/hashivim/vim-vagrant
+[submodule "bundle/grep"]
+	path = bundle/grep
+	url = https://github.com/yegappan/grep
