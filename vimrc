@@ -76,9 +76,6 @@
     execute pathogen#infect()
     filetype plugin indent on
 
-  "ale:
-    let g:ale_enabled = 1
-
   "base16-vim:
     if filereadable(expand("~/.vimrc_background"))
       let base16colorspace=256
