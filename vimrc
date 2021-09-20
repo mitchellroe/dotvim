@@ -47,6 +47,15 @@
 
 "filetypes:
 
+  "Makefile
+    function MakefileOptions()
+      set tabstop=4
+      set shiftwidth=4
+      set noexpandtab
+      set autoindent
+    endfunction
+    au BufNewFile,BufRead Makefile call MakefileOptions()
+
   "python:
     function PythonOptions()
       set tabstop=4
