@@ -79,3 +79,6 @@
 [submodule "bundle/vim-gitignore"]
 	path = bundle/vim-gitignore
 	url = https://github.com/gisphm/vim-gitignore.git
+[submodule "bundle/coc.nvim"]
+	path = bundle/coc.nvim
+	url = https://github.com/neoclide/coc.nvim.git
