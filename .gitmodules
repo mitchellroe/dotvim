@@ -94,3 +94,6 @@
 [submodule "bundle/vim-jsonc"]
 	path = bundle/vim-jsonc
 	url = https://github.com/kevinoid/vim-jsonc.git
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = https://github.com/dense-analysis/ale.git
