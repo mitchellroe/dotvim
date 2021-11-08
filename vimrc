@@ -68,6 +68,12 @@
     endfunction
     au BufNewFile,BufRead *.py call PythonOptions()
 
+  "restore last known position
+    autocmd BufReadPost *
+      \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
+      \ |   exe "normal! g`\""
+      \ | endif
+
 "base16:
 
 "packages:
@@ -77,11 +83,14 @@
     filetype plugin indent on
 
   "base16-vim:
+    let base16colorspace=256
     if filereadable(expand("~/.vimrc_background"))
-      let base16colorspace=256
       source ~/.vimrc_background
     endif
-    let base16colorspace=256  " Access colors present in 256 colorspace
+    " Added so I *actually* get a transparent background.
+    " https://github.com/chriskempson/base16-shell/issues/94#issuecomment-276286916
+    hi Normal ctermbg=none
+    hi NonText ctermbg=none
 
   "indentLine:
     let g:indentLine_enabled = 0
