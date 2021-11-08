@@ -85,3 +85,12 @@
 [submodule "bundle/vim-gitgutter"]
 	path = bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "bundle/sway-vim-syntax"]
+	path = bundle/sway-vim-syntax
+	url = https://github.com/ajouellette/sway-vim-syntax.git
+[submodule "bundle/php.vim"]
+	path = bundle/php.vim
+	url = https://github.com/stanangeloff/php.vim
+[submodule "bundle/vim-jsonc"]
+	path = bundle/vim-jsonc
+	url = https://github.com/kevinoid/vim-jsonc.git
