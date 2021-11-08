@@ -74,7 +74,6 @@
       \ |   exe "normal! g`\""
       \ | endif
 
-"base16:
 
 "packages:
 
