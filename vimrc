@@ -127,6 +127,9 @@
   "vim-airline:
     let g:airline_powerline_fonts = 1
 
+  "vim-json
+    let g:vim_json_syntax_conceal = 0
+
   "vim-markdown:
     filetype plugin on
     let g:markdown_enable_spell_checking = 1
