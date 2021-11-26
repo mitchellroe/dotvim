@@ -49,6 +49,14 @@
 
 "filetypes:
 
+  "js, html, css
+    function JsOptions()
+      set tabstop=2
+      set softtabstop=2
+      set shiftwidth=2
+    endfunction
+    au BufNewFile,BufRead *.js, *.html, *.css call JsOptions()
+
   "Makefile
     function MakefileOptions()
       set tabstop=4
