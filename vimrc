@@ -102,11 +102,13 @@
     endif
     " Added so I *actually* get a transparent background.
     " https://github.com/chriskempson/base16-shell/issues/94#issuecomment-276286916
-    hi Normal ctermbg=none
+    hi Normal  ctermbg=none
     hi NonText ctermbg=none
 
   "indentLine:
     let g:indentLine_enabled = 0
+    " indentLine sets the conceallevel to 2. You may want to set this
+    " explicitely for other modes.
 
   "nerdtree:
     " Automatically open NERDTree if we're in a git repository and we weren't
