@@ -30,6 +30,8 @@
 
   set foldmethod=indent
   set foldlevel=99
+  " A nice, easy way to expand and contract folds
+  nnoremap <space> za
 
   set ignorecase smartcase
 
