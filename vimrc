@@ -109,6 +109,9 @@
     nnoremap <C-n> :NERDTree<CR>
     nnoremap <C-t> :NERDTreeToggle<CR>
 
+  "simpylfold:
+    let g:SimpylFold_docstring_preview=1
+
   "vim-airline:
     let g:airline_powerline_fonts = 1
 
