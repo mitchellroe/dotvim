@@ -112,9 +112,15 @@
   "nerdtree:
     " Automatically open NERDTree if we're in a git repository and we weren't
     " told to open a specific file.
-    silent! !git rev-parse --is-inside-work-tree
-    if v:shell_error == 0
-      autocmd VimEnter * if !argc() | NERDTree | endif
+    if argc() == 0
+      silent! !git rev-parse --is-inside-work-tree
+      if v:shell_error == 0
+        autocmd VimEnter * NERDTreeVCS
+        autocmd VimEnter * wincmd w
+      else
+        autocmd VimEnter * NERDTree
+        autocmd VimEnter * wincmd w
+      endif
     endif
     nnoremap <leader>n :NERDTreeFocus<CR>
     nnoremap <C-n> :NERDTree<CR>
