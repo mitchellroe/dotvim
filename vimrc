@@ -124,11 +124,6 @@
   "simpylfold:
     let g:SimpylFold_docstring_preview=1
 
-  "ultiSnips
-    let g:UltiSnipsExpandTrigger="<c-/>"
-    let g:UltiSnipsJumpForwardTrigger="<c-b>"
-    let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
   "vim-airline:
     let g:airline_powerline_fonts = 1
 
