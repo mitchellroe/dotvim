@@ -49,34 +49,6 @@
 
 "filetypes:
 
-  "js, html, css
-    function JsOptions()
-      set tabstop=2
-      set softtabstop=2
-      set shiftwidth=2
-    endfunction
-    au BufNewFile,BufRead *.js, *.html, *.css call JsOptions()
-
-  "Makefile
-    function MakefileOptions()
-      set tabstop=4
-      set shiftwidth=4
-      set noexpandtab
-      set autoindent
-    endfunction
-    au BufNewFile,BufRead Makefile call MakefileOptions()
-
-  "python:
-    function PythonOptions()
-      set tabstop=4
-      set softtabstop=4
-      set shiftwidth=4
-      set expandtab
-      set autoindent
-      set fileformat=unix
-    endfunction
-    au BufNewFile,BufRead *.py call PythonOptions()
-
   "restore last known position
     autocmd BufReadPost *
       \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
@@ -93,6 +65,8 @@
   "ale:
     nmap <silent> <A-k> <Plug>(ale_previous_wrap)
     nmap <silent> <A-j> <Plug>(ale_next_wrap)
+    " See ftplugin directory for file type definitions
+    let g:ale_fix_on_save = 1
 
   "base16-vim:
     let base16colorspace=256
